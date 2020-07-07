@@ -18,7 +18,7 @@ export class _Blank extends React.Component {
     title: "Blank".toUpperCase()
   }
 
-  state = { Input_3: "" }
+  state = { Input_3: "", Datepicker_5: new Date("07/07/2020") }
 
   render = () => (
     <View
@@ -154,6 +154,38 @@ export class _Blank extends React.Component {
           borderRadius: 0,
           fontFamily: "System"
         }}
+      />
+      <Datepicker
+        style={{
+          width: "100%",
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          fontSize: 20,
+          color: "#000000",
+          backgroundColor: "#ffffff",
+          fontStyle: "normal",
+          fontWeight: "normal",
+          fontFamily: "System",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0
+        }}
+        date={this.state.Datepicker_5}
+        onSelect={nextValue => this.setState({ Datepicker_5: nextValue })}
       />
     </View>
   )
