@@ -18,7 +18,7 @@ export class _Blank extends React.Component {
     title: "Blank".toUpperCase()
   }
 
-  state = { Input_3: "", Datepicker_5: new Date("07/07/2020") }
+  state = { Input_3: "57686879", Datepicker_5: new Date("07/07/2020") }
 
   render = () => (
     <View
